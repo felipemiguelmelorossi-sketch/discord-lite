@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discord Lite</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- SERVIDORES -->
+    <aside class="servers">
+
+      <div class="server active">
+        DL
+      </div>
+
+      <div class="server add">
+        +
+      </div>
+
+    </aside>
+
+    <!-- CANAIS -->
+    <aside class="channels">
+
+      <div class="brand">
+        Discord Lite
+      </div>
+
+      <div class="channel-section">
+        <span>CANAIS DE TEXTO</span>
+        <button id="addChannel">+</button>
+      </div>
+
+      <div id="channelList">
+
+        <div class="channel active" data-channel="geral">
+          <span>#</span>
+          geral
+        </div>
+
+        <div class="channel" data-channel="bate-papo">
+          <span>#</span>
+          bate-papo
+        </div>
+
+      </div>
+
+      <div class="user-area">
+
+        <div class="avatar">
+          U
+        </div>
+
+        <div class="user-info">
+          <strong>Usuário</strong>
+          <small>Online</small>
+        </div>
+
+        <button class="settings" title="Configurações">
+          ⚙
+        </button>
+
+      </div>
+
+    </aside>
+
+    <!-- CHAT -->
+    <main class="chat">
+
+      <header class="chat-header">
+
+        <div>
+          <h2 id="channelName"># geral</h2>
+          <p id="channelDescription">
+            Bem-vindo ao Discord Lite!
+          </p>
+        </div>
+
+        <div class="header-actions">
+          <button>🔔</button>
+          <button>👥</button>
+          <button>🔍</button>
+        </div>
+
+      </header>
+
+      <section class="messages" id="messages">
+
+        <div class="welcome">
+
+          <div class="welcome-icon">
+            #
+          </div>
+
+          <h1>Bem-vindo ao #geral!</h1>
+
+          <p>
+            Este é o começo deste canal.
+          </p>
+
+        </div>
+
+        <div class="message">
+
+          <div class="message-avatar">
+            D
+          </div>
+
+          <div class="message-content">
+
+            <div class="message-author">
+              Discord Lite
+              <span>Hoje às 17:00</span>
+            </div>
+
+            <p>
+              Bem-vindo ao Discord Lite! 🚀
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <form class="message-box" id="messageForm">
+
+        <button type="button" class="attach">
+          +
+        </button>
+
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Enviar mensagem em #geral"
+          autocomplete="off"
+        >
+
+        <button type="submit" class="send">
+          ➤
+        </button>
+
+      </form>
+
+    </main>
+
+    <!-- MEMBROS -->
+    <aside class="members">
+
+      <h3>ONLINE — 2</h3>
+
+      <div class="member">
+        <div class="member-avatar">U</div>
+        <span>Usuário</span>
+      </div>
+
+      <div class="member">
+        <div class="member-avatar bot">D</div>
+        <span>Discord Lite</span>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
