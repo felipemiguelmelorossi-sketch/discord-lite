@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Discord Lite</title>
 
@@ -16,17 +21,17 @@
     <!-- SERVIDORES -->
     <aside class="server-bar">
 
-        <button class="server-icon active" title="Discord Lite">
+        <button class="server-icon active">
             <span>DL</span>
         </button>
 
         <div class="server-separator"></div>
 
-        <button class="server-icon" title="Servidor 2">
+        <button class="server-icon">
             <span>+</span>
         </button>
 
-        <button class="server-icon" title="Explorar servidores">
+        <button class="server-icon">
             <span>⌁</span>
         </button>
 
@@ -36,22 +41,25 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
 
-        <!-- CABEÇALHO DO SERVIDOR -->
         <div class="server-header">
 
-            <button class="server-name" id="serverMenuButton">
+            <button
+                class="server-name"
+                id="serverMenuButton"
+            >
                 <span>Discord Lite</span>
 
                 <svg viewBox="0 0 24 24">
-                    <path d="m7 10 5 5 5-5"></path>
+                    <path d="M7 10l5 5 5-5"></path>
                 </svg>
+
             </button>
 
         </div>
 
 
-        <!-- BUSCA -->
         <div class="sidebar-search">
+
             <input
                 type="text"
                 id="channelSearch"
@@ -61,51 +69,70 @@
 
             <svg viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="7"></circle>
-                <path d="m20 20-4-4"></path>
+                <path d="M20 20l-4-4"></path>
             </svg>
+
         </div>
 
 
-        <!-- CANAIS -->
         <div class="channels-container">
+
 
             <!-- INFORMAÇÕES -->
             <div class="channel-category">
 
                 <button class="category-title">
+
                     <svg viewBox="0 0 24 24">
-                        <path d="m9 18 6-6-6-6"></path>
+                        <path d="M9 18l6-6-6-6"></path>
                     </svg>
 
                     <span>INFORMAÇÕES</span>
+
                 </button>
 
 
                 <div class="category-channels">
 
-                    <button class="channel active" data-channel="regras">
-                        <span class="channel-symbol">#</span>
-                        <span class="channel-name">regras</span>
+                    <button
+                        class="channel active"
+                        data-channel="regras"
+                    >
 
-                        <span class="channel-options" title="Configurações">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1A1.7 1.7 0 0 0 8.4 17a1.7 1.7 0 0 0-1.6-1H6v-2.4h.8a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 10.6 9.7 9l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V7H15v.8a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3L18 9l1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.8V16h-.8a1.7 1.7 0 0 0-1.5-1z"></path>
-                            </svg>
+                        <span class="channel-symbol">#</span>
+
+                        <span class="channel-name">
+                            regras
                         </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
+                        </span>
+
                     </button>
 
 
-                    <button class="channel" data-channel="avisos">
-                        <span class="channel-symbol">#</span>
-                        <span class="channel-name">avisos</span>
+                    <button
+                        class="channel"
+                        data-channel="avisos"
+                    >
 
-                        <span class="channel-options" title="Configurações">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1A1.7 1.7 0 0 0 8.4 17a1.7 1.7 0 0 0-1.6-1H6v-2.4h.8a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 10.6 9.7 9l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V7H15v.8a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3L18 9l1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.8V16h-.8a1.7 1.7 0 0 0-1.5-1z"></path>
-                            </svg>
+                        <span class="channel-symbol">#</span>
+
+                        <span class="channel-name">
+                            avisos
                         </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
+                        </span>
+
                     </button>
 
                 </div>
@@ -113,58 +140,89 @@
             </div>
 
 
-            <!-- TEXTO -->
+            <!-- CANAIS DE TEXTO -->
             <div class="channel-category">
 
                 <button class="category-title">
+
                     <svg viewBox="0 0 24 24">
-                        <path d="m9 18 6-6-6-6"></path>
+                        <path d="M9 18l6-6-6-6"></path>
                     </svg>
 
                     <span>CANAIS DE TEXTO</span>
 
-                    <span class="category-add" title="Criar canal">+</span>
+                    <span
+                        class="category-add"
+                        title="Criar canal"
+                    >
+                        +
+                    </span>
+
                 </button>
 
 
                 <div class="category-channels">
 
-                    <button class="channel" data-channel="geral">
-                        <span class="channel-symbol">#</span>
-                        <span class="channel-name">geral</span>
+                    <button
+                        class="channel"
+                        data-channel="geral"
+                    >
 
-                        <span class="channel-options" title="Configurações">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1A1.7 1.7 0 0 0 8.4 17a1.7 1.7 0 0 0-1.6-1H6v-2.4h.8a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 10.6 9.7 9l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V7H15v.8a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3L18 9l1.7 1.7-.1.1a1.7 1.7 0 0 0 1.6 1h.8V16h-.8a1.7 1.7 0 0 0-1.5-1z"></path>
-                            </svg>
+                        <span class="channel-symbol">#</span>
+
+                        <span class="channel-name">
+                            geral
                         </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
+                        </span>
+
                     </button>
 
 
-                    <button class="channel" data-channel="bate-papo">
-                        <span class="channel-symbol">#</span>
-                        <span class="channel-name">bate-papo</span>
+                    <button
+                        class="channel"
+                        data-channel="bate-papo"
+                    >
 
-                        <span class="channel-options" title="Configurações">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1A1.7 1.7 0 0 0 8.4 17a1.7 1.7 0 0 0-1.6-1H6v-2.4h.8a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 10.6 9.7 9l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V7H15v.8a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3L18 9l1.7 1.7-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.8V16h-.8a1.7 1.7 0 0 0-1.5-1z"></path>
-                            </svg>
+                        <span class="channel-symbol">#</span>
+
+                        <span class="channel-name">
+                            bate-papo
                         </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
+                        </span>
+
                     </button>
 
 
-                    <button class="channel" data-channel="midia">
-                        <span class="channel-symbol">#</span>
-                        <span class="channel-name">mídia</span>
+                    <button
+                        class="channel"
+                        data-channel="midia"
+                    >
 
-                        <span class="channel-options" title="Configurações">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1A1.7 1.7 0 0 0 8.4 17a1.7 1.7 0 0 0-1.6-1H6v-2.4h.8a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 10.6 9.7 9l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V7H15v.8a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3L18 9l1.7 1.7-.1.1a1.7 1.7 0 0 0 1.6 1h.8V16h-.8a1.7 1.7 0 0 0-1.5-1z"></path>
-                            </svg>
+                        <span class="channel-symbol">#</span>
+
+                        <span class="channel-name">
+                            mídia
                         </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
+                        </span>
+
                     </button>
 
                 </div>
@@ -172,59 +230,80 @@
             </div>
 
 
-            <!-- VOZ -->
+            <!-- CANAIS DE VOZ -->
             <div class="channel-category">
 
                 <button class="category-title">
 
                     <svg viewBox="0 0 24 24">
-                        <path d="m9 18 6-6-6-6"></path>
+                        <path d="M9 18l6-6-6-6"></path>
                     </svg>
 
                     <span>CANAIS DE VOZ</span>
 
-                    <span class="category-add" title="Criar canal">+</span>
+                    <span
+                        class="category-add"
+                        title="Criar canal"
+                    >
+                        +
+                    </span>
 
                 </button>
 
 
                 <div class="category-channels">
 
-                    <button class="channel voice-channel" data-channel="voz-geral">
+                    <button
+                        class="channel voice-channel"
+                        data-channel="voz-geral"
+                    >
 
-                        <svg class="voice-icon" viewBox="0 0 24 24">
-                            <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
-                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                            <path d="M12 19v3"></path>
-                            <path d="M8 22h8"></path>
-                        </svg>
-
-                        <span class="channel-name">Geral</span>
-
-                        <span class="channel-options">
+                        <span class="voice-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <path d="M12 19v3"></path>
+                                <path d="M8 22h8"></path>
                             </svg>
+                        </span>
+
+                        <span class="channel-name">
+                            Geral
+                        </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
                         </span>
 
                     </button>
 
 
-                    <button class="channel voice-channel" data-channel="lounge">
+                    <button
+                        class="channel voice-channel"
+                        data-channel="lounge"
+                    >
 
-                        <svg class="voice-icon" viewBox="0 0 24 24">
-                            <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
-                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                            <path d="M12 19v3"></path>
-                            <path d="M8 22h8"></path>
-                        </svg>
-
-                        <span class="channel-name">Lounge</span>
-
-                        <span class="channel-options">
+                        <span class="voice-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <path d="M12 19v3"></path>
+                                <path d="M8 22h8"></path>
                             </svg>
+                        </span>
+
+                        <span class="channel-name">
+                            Lounge
+                        </span>
+
+                        <span
+                            class="channel-options"
+                            title="Configurações"
+                        >
+                            ⚙
                         </span>
 
                     </button>
@@ -245,40 +324,35 @@
             </div>
 
             <div class="user-info">
+
                 <strong>Thiago</strong>
+
                 <span>#0001</span>
+
             </div>
 
-            <button class="user-action" title="Microfone">
 
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"></path>
-                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                    <path d="M12 19v3"></path>
-                    <path d="M8 22h8"></path>
-                </svg>
-
+            <button
+                class="user-action"
+                title="Microfone"
+            >
+                🎙
             </button>
 
 
-            <button class="user-action" title="Desativar som">
-
-                <svg viewBox="0 0 24 24">
-                    <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
-                    <path d="m16 9 5 5"></path>
-                    <path d="m21 9-5 5"></path>
-                </svg>
-
+            <button
+                class="user-action"
+                title="Desativar som"
+            >
+                🔇
             </button>
 
 
-            <button class="user-action" title="Configurações">
-
-                <svg viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.7 1.7-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V22h-2.4v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L8 19l.1-.1A1.7 1.7 0 0 0 8.4 17a1.7 1.7 0 0 0-1.6-1H6v-2.4h.8a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L8 10.6 9.7 9l.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V7H15v.8a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3L18 9l1.7 1.7-.1.1a1.7 1.7 0 0 0 1.6 1h.8V16h-.8a1.7 1.7 0 0 0-1.5-1z"></path>
-                </svg>
-
+            <button
+                class="user-action"
+                title="Configurações"
+            >
+                ⚙
             </button>
 
         </div>
@@ -289,7 +363,8 @@
     <!-- CHAT -->
     <main class="chat">
 
-        <!-- TOPO DO CHAT -->
+
+        <!-- CABEÇALHO -->
         <header class="chat-header">
 
             <div class="chat-title">
@@ -309,27 +384,43 @@
             </div>
 
 
-            <!-- AÇÕES DO TOPO -->
+            <!-- ÍCONES DO DISCORD -->
             <div class="chat-actions">
 
+
                 <!-- NOTIFICAÇÕES -->
-                <button class="header-icon" title="Notificações" aria-label="Notificações">
+                <button
+                    class="header-icon"
+                    title="Notificações"
+                    aria-label="Notificações"
+                >
 
                     <svg viewBox="0 0 24 24">
+
                         <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+
                         <path d="M10 21h4"></path>
+
                     </svg>
 
                 </button>
 
 
                 <!-- FIXADOS -->
-                <button class="header-icon" title="Mensagens fixadas" aria-label="Mensagens fixadas">
+                <button
+                    class="header-icon"
+                    title="Mensagens fixadas"
+                    aria-label="Mensagens fixadas"
+                >
 
                     <svg viewBox="0 0 24 24">
-                        <path d="m15 4 5 5"></path>
-                        <path d="M13 6 4 15l5 5 9-9"></path>
-                        <path d="m8 21 4-4"></path>
+
+                        <path d="M15 4l5 5"></path>
+
+                        <path d="M13 6L4 15l5 5 9-9"></path>
+
+                        <path d="M8 21l4-4"></path>
+
                     </svg>
 
                 </button>
@@ -344,16 +435,25 @@
                 >
 
                     <svg viewBox="0 0 24 24">
+
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
+
+                        <circle
+                            cx="9"
+                            cy="7"
+                            r="4"
+                        ></circle>
+
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+
                         <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+
                     </svg>
 
                 </button>
 
 
-                <!-- BUSCA -->
+                <!-- PESQUISA -->
                 <div class="chat-search">
 
                     <input
@@ -365,31 +465,57 @@
                     >
 
                     <svg viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="7"></circle>
-                        <path d="m20 20-4-4"></path>
+
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="7"
+                        ></circle>
+
+                        <path d="M20 20l-4-4"></path>
+
                     </svg>
 
                 </div>
 
 
-                <!-- CAIXA DE ENTRADA -->
-                <button class="header-icon" title="Caixa de entrada" aria-label="Caixa de entrada">
+                <!-- INBOX -->
+                <button
+                    class="header-icon"
+                    title="Caixa de entrada"
+                    aria-label="Caixa de entrada"
+                >
 
                     <svg viewBox="0 0 24 24">
+
                         <path d="M4 4h16v16H4z"></path>
+
                         <path d="M4 13h4l2 3h4l2-3h4"></path>
+
                     </svg>
 
                 </button>
 
 
                 <!-- AJUDA -->
-                <button class="header-icon" title="Ajuda" aria-label="Ajuda">
+                <button
+                    class="header-icon"
+                    title="Ajuda"
+                    aria-label="Ajuda"
+                >
 
                     <svg viewBox="0 0 24 24">
-                        <circle cx="12" cy="12" r="9"></circle>
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                        ></circle>
+
                         <path d="M9.5 9a2.5 2.5 0 1 1 4.7 1.2c-.7 1.1-2.2 1.3-2.2 2.8"></path>
+
                         <path d="M12 17h.01"></path>
+
                     </svg>
 
                 </button>
@@ -399,10 +525,15 @@
         </header>
 
 
-        <!-- ÁREA PRINCIPAL -->
+        <!-- CONTEÚDO -->
         <div class="chat-content">
 
-            <section class="messages" id="messages">
+
+            <!-- MENSAGENS -->
+            <section
+                class="messages"
+                id="messages"
+            >
 
                 <div class="welcome">
 
@@ -410,7 +541,9 @@
                         #
                     </div>
 
-                    <h1>Bem-vindo ao #regras!</h1>
+                    <h1>
+                        Bem-vindo ao #regras!
+                    </h1>
 
                     <p>
                         Este é o começo do canal.
@@ -428,8 +561,15 @@
                     <div class="message-body">
 
                         <div class="message-header">
-                            <strong>Discord Lite</strong>
-                            <span>Hoje às 17:00</span>
+
+                            <strong>
+                                Discord Lite
+                            </strong>
+
+                            <span>
+                                Hoje às 17:00
+                            </span>
+
                         </div>
 
                         <p>
@@ -450,8 +590,15 @@
                     <div class="message-body">
 
                         <div class="message-header">
-                            <strong>Thiago</strong>
-                            <span>Hoje às 17:02</span>
+
+                            <strong>
+                                Thiago
+                            </strong>
+
+                            <span>
+                                Hoje às 17:02
+                            </span>
+
                         </div>
 
                         <p>
@@ -466,7 +613,10 @@
 
 
             <!-- MEMBROS -->
-            <aside class="member-list" id="memberList">
+            <aside
+                class="member-list"
+                id="memberList"
+            >
 
                 <div class="member-section">
 
@@ -478,8 +628,11 @@
                     <div class="member">
 
                         <div class="member-avatar">
+
                             T
+
                             <span class="member-status"></span>
+
                         </div>
 
                         <div class="member-name">
@@ -492,8 +645,11 @@
                     <div class="member">
 
                         <div class="member-avatar bot">
+
                             D
+
                             <span class="member-status"></span>
+
                         </div>
 
                         <div class="member-name">
@@ -518,17 +674,14 @@
         </div>
 
 
-        <!-- CAMPO DE MENSAGEM -->
+        <!-- COMPOSER -->
         <div class="message-composer">
 
-            <button class="composer-button" title="Adicionar">
-
-                <svg viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9"></circle>
-                    <path d="M12 8v8"></path>
-                    <path d="M8 12h8"></path>
-                </svg>
-
+            <button
+                class="composer-button"
+                title="Adicionar"
+            >
+                +
             </button>
 
 
@@ -540,28 +693,19 @@
             >
 
 
-            <button class="composer-button" title="GIF">
-
-                <svg viewBox="0 0 24 24">
-                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-                    <path d="M7 10h3"></path>
-                    <path d="M7 14h2"></path>
-                    <path d="M14 10h3"></path>
-                    <path d="M14 14h3"></path>
-                </svg>
-
+            <button
+                class="composer-button"
+                title="GIF"
+            >
+                GIF
             </button>
 
 
-            <button class="composer-button" title="Emoji">
-
-                <svg viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9"></circle>
-                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                    <path d="M9 9h.01"></path>
-                    <path d="M15 9h.01"></path>
-                </svg>
-
+            <button
+                class="composer-button"
+                title="Emoji"
+            >
+                ☺
             </button>
 
         </div>
@@ -572,7 +716,10 @@
 
 
 <!-- MENU DO SERVIDOR -->
-<div class="context-menu server-menu" id="serverMenu">
+<div
+    class="context-menu server-menu"
+    id="serverMenu"
+>
 
     <button>
         <span>Convidar pessoas</span>
@@ -604,7 +751,10 @@
 
 
 <!-- MENU DO CANAL -->
-<div class="context-menu channel-menu" id="channelMenu">
+<div
+    class="context-menu channel-menu"
+    id="channelMenu"
+>
 
     <button>
         <span>Marcar como lido</span>
@@ -628,7 +778,10 @@
 
     <div class="menu-divider"></div>
 
-    <button class="danger" id="deleteChannel">
+    <button
+        class="danger"
+        id="deleteChannel"
+    >
         <span>Excluir canal</span>
     </button>
 
@@ -638,4 +791,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
